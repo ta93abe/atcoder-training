@@ -1,7 +1,7 @@
 # atcoder-training
 
-c++
-python
-rust
-go
-dart
+- c++
+- python
+- rust
+- go
+- dart
