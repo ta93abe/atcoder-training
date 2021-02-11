@@ -8,7 +8,7 @@ using P = pair<int, int>;
 
 int main()
 {
-    float v, t, s, d;
+    double v, t, s, d;
     cin >> v >> t >> s >> d;
 
     if (t <= d / v and d / v <= s)

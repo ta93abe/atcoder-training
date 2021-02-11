@@ -1,4 +1,4 @@
-# atcoder解答
+# atcoder solutions
 
 - c++
 - python
