@@ -8,21 +8,13 @@ using P = pair<int, int>;
 
 int main()
 {
-    int n, l;
-    cin >> n >> l;
+    ll k;
+    cin >> k;
+    int cnt = 0;
+    for (int a = 1; a <= k; ++a)
+        for (int b = 1; b <= k; ++b)
+            cnt += k / (a * b);
 
-    int r = l + n - 1;
-
-    int eat = 0;
-
-    if (r <= 0)
-        eat = r;
-    else if (l >= 0)
-        eat = l;
-    else
-        eat = 0;
-
-    cout << (l + r) * n / 2 - eat << endl;
-
+    cout << cnt << endl;
     return 0;
 }

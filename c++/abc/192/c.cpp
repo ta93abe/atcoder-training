@@ -8,10 +8,9 @@ using P = pair<int, int>;
 
 int main()
 {
-    int h, w;
-    cin >> h >> w;
+    ll n, k;
+    cin >> n >> k;
 
-    vector<vector<char>> s(h, vector<char>(w));
-
+    
     return 0;
 }

@@ -8,21 +8,14 @@ using P = pair<int, int>;
 
 int main()
 {
-    int n, l;
-    cin >> n >> l;
+    ll t;
+    cin >> t;
 
-    int r = l + n - 1;
-
-    int eat = 0;
-
-    if (r <= 0)
-        eat = r;
-    else if (l >= 0)
-        eat = l;
-    else
-        eat = 0;
-
-    cout << (l + r) * n / 2 - eat << endl;
+    rep(i, t)
+    {
+        ll l, r;
+        cin >> l >> r;
+    }
 
     return 0;
 }

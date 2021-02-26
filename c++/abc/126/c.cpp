@@ -11,5 +11,6 @@ int main()
     ll n, k;
     cin >> n >> k;
 
+    double a = 1.0 / N;
     return 0;
 }
