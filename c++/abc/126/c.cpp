@@ -11,6 +11,19 @@ int main()
     ll n, k;
     cin >> n >> k;
 
-    double a = 1.0 / N;
+    double ans = 0;
+
+    for (int i = 1; i <= n; i++)
+    {
+        double tmp = 1.0 / n;
+        ll now = i;
+        while (now < k)
+        {
+            now *= 2;
+            tmp /= 2;
+        }
+        ans += tmp;
+    }
+    printf("%.10f", ans);
     return 0;
 }
