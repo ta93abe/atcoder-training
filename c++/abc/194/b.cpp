@@ -10,23 +10,14 @@ int main()
 {
     int n;
     cin >> n;
-    int min_a = 100001;
-    int min_b = 100001;
-    int sum_ab = 200001;
 
-    rep(i, n)
-    {
-        ll a, b;
-        cin >> a >> b;
-        if (a < min_a)
-            min_a = a;
-        if (b < min_b)
-            min_b = b;
-        if (a + b < sum_ab)
-            sum_ab = a + b;
-    }
+    vector<int> a(n), b(n);
+    rep(i, n) cin >> a[i] >> b[i];
 
-    cout << min(max(min_a, min_b), sum_ab) << endl;
+    int ans = 200001;
+    rep(i, n) rep(j, n) ans = min(ans, i == j ? a[i] + b[j] : max(a[i], b[j]));
+
+    cout << ans << endl;
 
     return 0;
 }
